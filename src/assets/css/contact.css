@@ -1,0 +1,130 @@
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-right{
+    margin: 30px 0;
+    width: 55%;
+    padding: 20px 4%;
+    text-align: start;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.flex-input{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-input .col-md-6{
+    width: 45%;
+}
+.form-group label{
+    margin: 20px 0;
+    color: #c4cfde;
+}
+.form-group input{
+    height: 55px;
+    background: #191b1e;
+    border: 2px solid #191b1e;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.form-group textarea{
+    background: #191b1e;
+    border: 2px solid #191b1e;
+    padding: 0 15px;
+    font-size: 14px;
+    resize: none;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    border: 2px solid #f9004d;
+    background: #191b1e;
+    box-shadow: none;
+}
+.form-submit-button{
+    width: 100%;
+    padding: 15px 0;
+    margin: 25px 0;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    font-size: 14px;
+    color: #f9004d;
+    transition: all .5s ease;
+}
+.form-submit-button:hover{
+    background: #161718;
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}
+.form-submit-button span{
+    padding-left: 10px;
+}
+
+
+.contact-left{
+    margin: 30px 0;
+    width: 40%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    padding: 30px 40px;
+    cursor: pointer;
+}
+.contact-left-inner{
+    width: 100%;
+    height: 100%;
+    text-align: start;
+}
+.contact-image-container{
+    width: 100%;
+}
+.contact-image-container img{
+    width: 100%;
+    border-radius: 8px;
+}
+.contact-left-inner h1{
+    font-size: 1.8em;
+}
+.contact-title{
+    font-size: 18px;
+    padding: 10px 0;
+    color: aliceblue;
+}
+.avail-messege{
+    font-size: 18px;
+    padding: 15px 0;
+    color: aliceblue;
+}
+.contact-contact{
+    color: aliceblue;
+}
+.links-contact{
+    padding: 0;
+}
+
+
+@media (max-width:992px){
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-right{
+        width: 100%;
+        padding: 20px 4%;
+    }
+    .contact-left{
+        width: 100%;
+        padding: 30px 25px;
+    }
+    .contact-left-inner h1{
+        font-size: 1.8em;
+    }
+    .flex-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-input .col-md-6{
+        width: 100%;
+    }
+}

@@ -1,0 +1,126 @@
+.intro-div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    padding-bottom: 100px;
+    margin: 0 5%;
+    padding-top: 100px;
+}
+.intro-left{
+    width: 50%;
+    padding: 150px 50px 0 0;
+    padding-top: 100px;
+}
+.my-links-section{
+    display: flex;
+    padding-top: 100px;
+}
+.find-links{
+    display: flex;
+    width: 100%;
+}
+.my-link-left p,
+.my-link-right p{
+    color: #c4cfde;
+    margin: 25px 0;
+}
+.find-links a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: .5s;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    position: relative;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+.find-links a:hover{
+    transform: translateY(-5px);
+}
+.my-link-left,
+.my-link-right{
+    width: 50%;
+}
+.show-my-details p{
+    font-size: 18px;
+    color: #c4cfde;
+    padding-right: 20px;
+}
+.welcome-text p{
+    font-size: 15px;
+    color: #c4cfde;
+}
+.before-typed h1,
+.main-typed h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    margin-bottom: 22px;
+}
+.my-name{
+    color: #ff014f;
+}
+
+
+.intro-right{
+    width: 50%;
+    padding-top: 80px;
+}
+.img-contain{
+    width: 70%;
+    margin: auto;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    border-radius: 6px;
+}
+.intro-right img{
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width:992px){
+    .intro-div{
+        flex-direction: column-reverse;
+    }
+    .intro-left{
+        width: 100%;
+        padding-right: 10px;
+    }
+    .my-links-section{
+        flex-direction: column;
+    } 
+    .my-link-left,
+    .my-link-right{
+        width: 100%;
+    }
+    .before-typed h1,
+    .main-typed h1{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+
+    .intro-right{
+        width: 100%;
+    }
+    .img-contain{
+        width: 100%;
+    }
+    .intro-right img{
+        width: 100%;
+    }
+}

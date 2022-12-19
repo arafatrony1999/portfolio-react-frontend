@@ -1,0 +1,198 @@
+.pricing-section{
+    border-bottom: 2px solid black;
+    padding-bottom: 100px;
+    margin: 0 5%;
+    text-align: center;
+}
+.pricing{
+    padding: 50px 0;
+    display: flex;
+}
+.pricing-left{
+    text-align: start;
+    width: 40%;
+}
+.pricing-left span{
+    font-size: 18px;
+    color: #f9004d;
+}
+.pricing-left p{
+    font-size: 40px;
+    color: #c4cfde;
+}
+
+
+.pricing-right{
+    width: 60%;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    padding-bottom: 50px;
+}
+.pricing-header{
+    border-radius: 8px;
+    width: 100%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.pricing-header button{
+    width: 33.3333%;
+    line-height: 80px;
+    border: none;
+    color: #c4cfde;
+    background: none;
+    transition: all .5s ease;
+}
+.active-price{
+    color: #f9004d !important;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.pricing-title{
+    display: flex;
+}
+.pricing-title-left{
+    width: 67%;
+    text-align: start;
+    padding: 50px 10px 20px 40px;
+}
+.pricing-title-left h1{
+    font-size: 40px;
+    color: #c4cfde;
+}
+.pricing-title-left p{
+    color: #c4cfde;
+    font-size: 18px;
+}
+.pricing-title-right{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-title-right span{
+    color: #f9004d;
+    font-size: 25px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+.pricing-dummy{
+    text-align: start;
+}
+.pricing-dummy p{
+    padding: 40px;
+    color: #c4cfde;
+    font-size: 20px;
+}
+.pricing-details{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.single-details{
+    text-align: start;
+    color: #c4cfde;
+    width: 50%;
+    font-size: 18px;
+    padding: 10px 0 10px 40px;
+}
+.single-details span i{
+    margin-right: 20px;
+}
+.pricing-btn{
+    padding: 70px;
+    padding-bottom: 30px !important;
+}
+.pricing-btn button{
+    width: 100%;
+    padding: 15px 0;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    border: none;
+    border-radius: 8px;
+    color: #f9004d;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.pricing-btn span{
+    color: #c4cfde;
+    padding: 0 20px;
+}
+.pricing-btn span i{
+    padding-right: 10px;
+}
+
+
+
+
+
+
+@media (max-width:992px){
+    .pricing{
+        flex-direction: column;
+    }
+    .pricing-left{
+        width: 100%;
+        text-align: center;
+    }
+    .pricing-right{
+        width: 100%;
+    }
+    .pricing-header button{
+        width: 100%;
+    }
+    .pricing-title{
+        flex-direction: column;
+    }
+    .pricing-title-left{
+        width: 100%;
+        padding: 50px 10px 20px 40px;
+    }
+    .pricing-title-left h1{
+        font-size: 30px;
+    }
+    .pricing-title-right{
+        width: 100%;
+    }
+    .pricing-title-right span{
+        color: #f9004d;
+        font-size: 25px;
+        background: linear-gradient(145deg, #1e2024, #23272b);
+        box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+        padding: 10px 40px;
+    }
+
+
+
+    .pricing-details{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .single-details{
+        text-align: start;
+        color: #c4cfde;
+        width: 100%;
+        font-size: 18px;
+        padding: 10px 0 10px 40px;
+    }
+    .pricing-btn{
+        padding: 70px 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .pricing-btn button{
+        width: 100% !important;
+    }
+    .pricing-btn span{
+        color: #c4cfde;
+        padding: 10px;
+    }
+    .pricing-btn span i{
+        padding-right: 10px;
+    }
+}

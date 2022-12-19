@@ -1,0 +1,241 @@
+.resume-navs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+.resume-navs button{
+    display: inline-block;
+    text-decoration: none;
+    color: #c4cfde;
+    font-size: 18px;
+    width: 25%;
+    line-height: 80px;
+    background: none;
+    transition: all .5s ease;
+    border: none;
+}
+.resume-navs button.resume-nav-active{
+    color: #f9004d;
+    background: #212428;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
+    border-radius: 8px;
+}
+.resume-navs button:hover{
+    color: #f9004d;
+    background: #212428;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
+    border-radius: 8px;
+    transition: all .5s ease;
+}
+.resume-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.resume-titles{
+    text-align: start;
+    margin: 40px 0;
+}
+.resume-titles span{
+    color: #f9004d;
+}
+.resume-titles p{
+    color: #c4cfde;
+    font-size: 30px;
+}
+.resume-main-left{
+    position: relative;
+    width: 49%;
+}
+.resume-left::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 5px;
+    height: 980px;
+    /* height: 100%; */
+    background: #17191C;
+    z-index: -1;
+}
+.resume-main-right{
+    position: relative;
+    width: 49%;
+}
+.resume-right::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 5px;
+    height: 980px;
+    /* height: 100%; */
+    background: #17191C;
+    z-index: -1;
+}
+.resume-card{
+    width: 90%;
+    height: 300px;
+    display: flex;
+    padding-left: 35px;
+}
+.card-margin{
+    width: 100%;
+    height: 100%;
+}
+.card-box{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    position: relative;
+    padding: 50px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.card-box:hover{
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    transition: all .5s ease;
+}
+.card-box::before{
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50px;
+    width: 35px;
+    height: 5px;
+    background: #17191C;
+}
+.my-circle{
+    position: absolute;
+    top: 42.5px;
+    left: -42.5px;
+    width: 20px;
+    height: 20px;
+    background: #212428;
+    z-index: 2;
+    border: 5px solid #17191C;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+.resume-card:hover .my-circle{
+    background: red;
+    transition: all .5s ease;
+}
+.card-top{
+    width: 100%;
+    height: 50%;
+    border-bottom: .5px dotted black;
+    display: flex;
+    justify-content: space-between;
+}
+.card-top-left{
+    text-align: start;
+}
+.card-top-left span{
+    color: #c4cfde;
+    font-size: 22px;
+}
+.card-top-left p{
+    color: #c4cfde;
+    font-size: 16px;
+}
+.card-top-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-top-right span{
+    padding: 10px 20px;
+    margin-top: -20px;
+    color: #f9004d;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e !important;
+}
+.card-bottom{
+    width: 100%;
+    height: 50%;
+    text-align: start;
+}
+.card-bottom p{
+    color: #c4cfde;
+    padding-top: 20px;
+}
+.my-margin{
+    height: 40px;
+    width: 100%;
+    background: none;
+}
+.display-none{
+    display: none;
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 20px;
+	width: 500px;
+}
+
+.progress-done {
+	background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+
+
+@media (max-width:992px){
+    .resume-navs{
+        flex-direction: column;
+    }
+    .resume-navs button{
+        width: 100%;
+    }
+    .resume-main{
+        flex-direction: column;
+    }
+    .resume-main-left{
+        position: relative;
+        width: 100%;
+    }
+    .resume-main-right{
+        position: relative;
+        width: 100%;
+    }
+    .resume-left::before{
+        height: 1280px;
+    }
+    .resume-right::before{
+        height: 1280px;
+    }
+    .resume-card{
+        width: 95%;
+        height: 400px;
+        display: flex;
+    }
+    .card-box{
+        padding: 20px;
+    }
+    .card-top{
+        flex-direction: column;
+        justify-content: unset;
+        
+    }
+    .card-top-right{
+        display: block;
+        text-align: start;
+    }
+}
